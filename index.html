@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation CSS</title>
+    <style>
+      .boule {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        animation: rebond 2s infinite;
+      }
+
+      @keyframes rebond {
+        0%,
+        100% {
+          top: 90%;
+          animation-timing-function: ease-in;
+        }
+        50% {
+          top: 10%;
+          animation-timing-function: ease-out;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boule"></div>
+  </body>
+</html>
